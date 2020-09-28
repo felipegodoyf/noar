@@ -14,4 +14,13 @@ public class Door : MonoBehaviour
             a.SetTrigger("Open");
         }
     }
+
+    public void Close()
+    {
+        Debug.Log("Closing door");
+        foreach (Animator a in animators)
+        {
+            a.SetTrigger("Close");
+        }
+    }
 }
