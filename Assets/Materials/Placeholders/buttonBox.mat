@@ -7,12 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FeetIcon
+  m_Name: buttonBox
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _RECEIVE_SHADOWS_OFF
-  m_LightmapFlags: 4
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: 3000
   stringTagMap:
     RenderType: Transparent
@@ -22,19 +22,19 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: a914f96b8d3f8c944ad2a356ff684892, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0728b138a8a93224e912f3e9122fff9e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 321b970aac1bd1e4786d527547ca01be, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: a914f96b8d3f8c944ad2a356ff684892, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0728b138a8a93224e912f3e9122fff9e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a914f96b8d3f8c944ad2a356ff684892, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -53,8 +53,8 @@ Material:
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
-    - _Cull: 2
-    - _Cutoff: 0.577
+    - _Cull: 0
+    - _Cutoff: 0.5
     - _DstBlend: 10
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
@@ -63,8 +63,9 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _QueueOffset: 0
-    - _ReceiveShadows: 0
-    - _Smoothness: 0
+    - _ReceiveShadows: 1
+    - _SampleGI: 0
+    - _Smoothness: 0.808
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 5
@@ -72,12 +73,12 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.5019608}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 1024, g: 1024, b: 1024, a: 1}
+    - _EmissionColor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &2695270393180197968
+--- !u!114 &8266801390901730916
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
