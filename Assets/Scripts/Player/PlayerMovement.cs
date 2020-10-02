@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
                 if (Input.anyKeyDown)
                 {
-                    targetPosition = hit.point;
+                    targetPosition = new Vector3(hit.point.x, playerRoot.position.y, hit.point.z);
                 }
             }
             else

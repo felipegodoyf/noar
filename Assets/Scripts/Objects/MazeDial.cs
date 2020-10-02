@@ -9,18 +9,17 @@ public class MazeDial : MonoBehaviour
     [SerializeField] UnityEvent successEvent;
     Vector3 startPosition;
 
-    void Start ()
+    void Start()
     {
         startPosition = transform.position;
+        GetComponent<Rigidbody>().sleepThreshold = 0;
     }
 
     void OnCollisionStay(Collision col)
     {
         if (col.gameObject.name == "Maze")
         {
-            transform.position = startPosition;
-            playerMazeInteraction.UnselectDial();
-            Debug.Log("Resetting dial");
+            Reset();
         }
     }
 
@@ -30,7 +29,16 @@ public class MazeDial : MonoBehaviour
         {
             this.gameObject.SetActive(false);
             successEvent.Invoke();
+            AudioManager.instance.PlaySound("Maze_Finish", transform.position);
         }
+    }
+
+    public void Reset()
+    {
+        transform.position = startPosition;
+        playerMazeInteraction.UnselectDial();
+        Debug.Log("Resetting dial");
+        AudioManager.instance.PlaySound("Maze_Wrong", transform.position);
     }
 
     public void SelectDial()
