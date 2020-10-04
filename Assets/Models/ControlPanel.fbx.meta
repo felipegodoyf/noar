@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 026f292b8049013449ec21d419b83932
+guid: c6a510379d3bcf743853e368b67d2857
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -7,33 +7,68 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Vault
-    second: {fileID: 2100000, guid: dcfd0152e9b44a349bbf0953f5d047de, type: 2}
+      name: ControlPanel_GPSInside
+    second: {fileID: 2100000, guid: 0a42258ac1fe554409059c98c980eee5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Vault_Bolts
-    second: {fileID: 2100000, guid: 8029575206b1b894ba26decd1ca3220d, type: 2}
+      name: ControlPanel_GPSPointer
+    second: {fileID: 2100000, guid: 7b26220a1d92c5445855608ef0c6b320, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Vault_Handle
-    second: {fileID: 2100000, guid: 94280c1661e130f4ba74a7c889284360, type: 2}
+      name: ControlPanel_GPS_Border
+    second: {fileID: 2100000, guid: 136d0b4669dedf04f98b982f90caa82a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Vault_Password
-    second: {fileID: 2100000, guid: fde4d5c3d4f7dd246805383708e186d3, type: 2}
+      name: ControlPanel_Screen0
+    second: {fileID: 2100000, guid: 651e872b7f38ecd4a8bae3b1cf56f1d4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Vault_PasswordButtons
-    second: {fileID: 2100000, guid: fc2c107b726ddbf4382b9c53ad5e4431, type: 2}
+      name: ControlPanel_ScreenBorder
+    second: {fileID: 2100000, guid: 150bbc606822a0e4d8936960ae21f4ea, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Vault_PasswordDisplay
-    second: {fileID: 2100000, guid: af6f2809c4282c346a33a765afe1680f, type: 2}
+      name: ControlPanel_Switch
+    second: {fileID: 2100000, guid: eb277f15e20d5e34aa79176881244d6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ControlPanel_SwitchKnob0
+    second: {fileID: 2100000, guid: 1156ea1231a898a4b8e9b928bb405fa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ControlPanel_SwitchKnob1
+    second: {fileID: 2100000, guid: 21bdf856a8a1d2f40ab877f08339da80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ControlPanel_Switch_Inside
+    second: {fileID: 2100000, guid: cb4c3ecc229e0ae4587dc6dc66ed2c71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedButton_0
+    second: {fileID: 2100000, guid: 639901bb6f56c364ea74c7b3b2c033a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedButton_1
+    second: {fileID: 2100000, guid: 012bfe94a1275714d936f2b7a8b6d03d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedButton_2
+    second: {fileID: 2100000, guid: 20d26285f94c8af4198e2b62bc90c0c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedButton_Barrier
+    second: {fileID: 2100000, guid: 9d6ff7c68bce30d4abdc4ac099146c29, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -61,7 +96,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -74,7 +109,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
