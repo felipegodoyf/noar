@@ -14,9 +14,11 @@ public class Vault : MonoBehaviour
 
     public void typeNumber (int number)
     {
+        Debug.Log("Typing vault number " + number);
         if (opened) return;
         currentPassword += number;
-        if (currentPassword.Length > 4)
+        UpdateDisplay();
+        if (currentPassword.Length >= password.Length)
         {
             if (currentPassword == password)
             {
@@ -37,7 +39,6 @@ public class Vault : MonoBehaviour
     IEnumerator AutoReset()
     {
         yield return new WaitForSeconds(typeTimeout);
-        AudioManager.instance.PlaySound("Vault_Wrong", transform.position);
         Reset();
     }
 
@@ -45,6 +46,7 @@ public class Vault : MonoBehaviour
     {
         currentPassword = "";
         UpdateDisplay();
+        AudioManager.instance.PlaySound("Vault_Wrong", transform.position);
     }
 
     void UpdateDisplay()

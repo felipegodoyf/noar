@@ -3,7 +3,32 @@ guid: ec5a0a907512d24499b1ef11ee18671d
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Maze_Door
+    second: {fileID: 2100000, guid: dea981f9be56ce647a5ac161f7a5f3f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Maze_DoorLock
+    second: {fileID: 2100000, guid: 6b2a2b213b40b1343ac0a0b6497aace0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Maze_DoorLockInside
+    second: {fileID: 2100000, guid: c06b4d34d3384a944823b4727e12023d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Maze_Door_1
+    second: {fileID: 2100000, guid: ced536993dbf1fc48a45f41bd754a866, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: b445a19d8a4ecf345a6fdc3312980048, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -44,7 +69,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
