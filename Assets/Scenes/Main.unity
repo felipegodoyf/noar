@@ -3812,7 +3812,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 15
+      scalar: 30
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -7658,7 +7658,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 62b8cc25614bd5649a694b0bc7e88084, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7974,7 +7974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1144995554
 Transform:
   m_ObjectHideFlags: 0
@@ -13862,7 +13862,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: MazeDoor_Open
     Clip: {fileID: 8300000, guid: d40a36b3453024d41ab92303d97f907d, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     playOnAwake: 0
@@ -19370,7 +19370,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -20187,7 +20187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2084026463
 Transform:
   m_ObjectHideFlags: 0
@@ -25577,10 +25577,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0a265a92ffc29bd4e9e500ce12ba3b32, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0389ae80edfea714cba856c342395b14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.7
+  m_Pitch: 1.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -25793,10 +25793,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0a265a92ffc29bd4e9e500ce12ba3b32, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0389ae80edfea714cba856c342395b14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.7
+  m_Pitch: 1.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -26937,10 +26937,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0a265a92ffc29bd4e9e500ce12ba3b32, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0389ae80edfea714cba856c342395b14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.7
+  m_Pitch: 1.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -27176,10 +27176,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0a265a92ffc29bd4e9e500ce12ba3b32, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0389ae80edfea714cba856c342395b14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.7
+  m_Pitch: 1.5
   Loop: 0
   Mute: 0
   Spatialize: 0

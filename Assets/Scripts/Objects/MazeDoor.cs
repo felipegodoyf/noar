@@ -5,26 +5,31 @@ using UnityEngine;
 public class MazeDoor : MonoBehaviour
 {
     public Transform keyPosition;
+    bool locked = true;
 
     void OnTriggerStay(Collider other)
     {
-        if (other.name == "Key")
+        if (locked)
         {
-            other.transform.SetParent(keyPosition);
-            other.transform.localPosition = Vector3.zero;
-            other.transform.localRotation = Quaternion.identity;
-            other.gameObject.GetComponent<Animator>().enabled = false;
-            foreach (SimpleRotation s in other.gameObject.GetComponentsInChildren<SimpleRotation>())
+            if (other.name == "Key")
             {
-                s.enabled = false;
+                other.transform.SetParent(keyPosition);
+                other.transform.localPosition = Vector3.zero;
+                other.transform.localRotation = Quaternion.identity;
+                other.gameObject.GetComponent<Animator>().enabled = false;
+                foreach (SimpleRotation s in other.gameObject.GetComponentsInChildren<SimpleRotation>())
+                {
+                    s.enabled = false;
+                }
+                foreach (FakeBillboard f in other.gameObject.GetComponentsInChildren<FakeBillboard>())
+                {
+                    f.gameObject.SetActive(false);
+                }
+                GetComponent<Animator>().SetTrigger("Open");
+                AudioManager.instance.PlaySound("MazeDoor_Open", transform.position);
+                this.enabled = false;
+                locked = false;
             }
-            foreach (FakeBillboard f in other.gameObject.GetComponentsInChildren<FakeBillboard>())
-            {
-                f.gameObject.SetActive(false);
-            }
-            GetComponent<Animator>().SetTrigger("Open");
-            AudioManager.instance.PlaySound("MazeDoor_Open", transform.position);
-            this.enabled = false;
         }
     }
 }

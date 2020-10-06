@@ -16,6 +16,7 @@ public class Vault : MonoBehaviour
     public void typeNumber (int number)
     {
         Debug.Log("Typing vault number " + number);
+        AudioManager.instance.SetPitch("Vault_Button", 0.7f + (float)number/10.0f);
         AudioManager.instance.PlaySound("Vault_Button", transform.position);
         if (opened) return;
         currentPassword += number;
@@ -28,8 +29,10 @@ public class Vault : MonoBehaviour
             }
             else
             {
+                AudioManager.instance.PlaySound("Vault_Wrong", transform.position);
                 Reset();
             }
+            StopAllCoroutines();
         }
         else
         {
@@ -41,14 +44,17 @@ public class Vault : MonoBehaviour
     IEnumerator AutoReset()
     {
         yield return new WaitForSeconds(typeTimeout);
-        Reset();
+        if (!opened)
+        {
+            AudioManager.instance.PlaySound("Vault_Wrong", transform.position);
+            Reset();
+        }
     }
 
     void Reset()
     {
         currentPassword = "";
         UpdateDisplay();
-        AudioManager.instance.PlaySound("Vault_Wrong", transform.position);
     }
 
     void UpdateDisplay()
