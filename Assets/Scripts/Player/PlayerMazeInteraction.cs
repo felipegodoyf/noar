@@ -22,7 +22,10 @@ public class PlayerMazeInteraction : MonoBehaviour
             }
             else if (hit.collider.gameObject.name == "Maze")
             {
-                dial.GetComponent<MazeDial>().Reset();
+                if (dial != null)
+                {
+                    dial.GetComponent<MazeDial>().Reset();
+                }
             }
         }
     }

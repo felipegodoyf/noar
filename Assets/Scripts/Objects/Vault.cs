@@ -16,6 +16,7 @@ public class Vault : MonoBehaviour
     public void typeNumber (int number)
     {
         Debug.Log("Typing vault number " + number);
+        AudioManager.instance.PlaySound("Vault_Button", transform.position);
         if (opened) return;
         currentPassword += number;
         UpdateDisplay();

@@ -23,6 +23,7 @@ public class MazeDoor : MonoBehaviour
                 f.gameObject.SetActive(false);
             }
             GetComponent<Animator>().SetTrigger("Open");
+            AudioManager.instance.PlaySound("MazeDoor_Open", transform.position);
             this.enabled = false;
         }
     }
