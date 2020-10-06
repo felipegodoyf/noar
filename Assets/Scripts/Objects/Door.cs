@@ -28,6 +28,6 @@ public class Door : MonoBehaviour
         {
             a.SetTrigger("Close");
         }
-        AudioManager.instance.PlaySound("Door_Close", transform.position);
+        AudioManager.instance.PlaySound("Door_Open", transform.position);
     }
 }

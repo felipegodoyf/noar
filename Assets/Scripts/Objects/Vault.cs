@@ -10,6 +10,7 @@ public class Vault : MonoBehaviour
     string currentPassword = "";
     public Text displayText;
     public Animator doorAnimator;
+    public GameObject key;
     bool opened = false;
 
     public void typeNumber (int number)
@@ -59,5 +60,6 @@ public class Vault : MonoBehaviour
         opened = true;
         doorAnimator.SetTrigger("Open");
         AudioManager.instance.PlaySound("Vault_Open", transform.position);
+        key.SetActive(true);
     }
 }
