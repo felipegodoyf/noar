@@ -1252,6 +1252,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dfa067ab55b7894eb4a0016cd3e633f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &382546290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e9027d07705fa0b45835c1452e631632,
+    type: 3}
+  m_PrefabInstance: {fileID: 3511625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &382546291
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382546290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 0
+  m_Mesh: {fileID: -5840284170326959453, guid: e9027d07705fa0b45835c1452e631632, type: 3}
 --- !u!1 &400925992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,8 +1871,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.54757273, y: 0.9999998, z: 0.027153196}
-  m_Center: {x: -0.22621393, y: -0.00000013581008, z: -0.47100264}
+  m_Size: {x: 0.53797084, y: 0.9999998, z: 0.014717501}
+  m_Center: {x: -0.16845146, y: -0.00000010113091, z: -0.46478626}
 --- !u!1 &680149094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,6 +2368,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772394995}
   m_CullTransparentMesh: 0
+--- !u!1 &824298641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4479205748689040085, guid: 026f292b8049013449ec21d419b83932,
+    type: 3}
+  m_PrefabInstance: {fileID: 1907571524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &824298645
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824298641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 0
+  m_Mesh: {fileID: 89166043207593259, guid: 026f292b8049013449ec21d419b83932, type: 3}
 --- !u!1 &850432892
 GameObject:
   m_ObjectHideFlags: 0
@@ -3878,7 +3918,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -3889,13 +3929,22 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 1
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
           outWeight: 0
+        - serializedVersion: 3
+          time: 0.06197606
+          value: 0.9869968
+          inSlope: 0.42119658
+          outSlope: 0.42119658
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
           value: 0
@@ -7934,7 +7983,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144995553}
   m_LocalRotation: {x: 0.6236918, y: 0.0000005066395, z: 0.0000025629997, w: 0.78167045}
-  m_LocalPosition: {x: -0.00183, y: 0.01057, z: 0.01638}
+  m_LocalPosition: {x: -0.000876, y: 0.010595, z: 0.017402}
   m_LocalScale: {x: 0.0070168003, y: 0.0070168003, z: 0.0070168003}
   m_Children: []
   m_Father: {fileID: 5279657335625879719}
@@ -8942,7 +8991,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -8953,13 +9002,22 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 1
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
           outWeight: 0
+        - serializedVersion: 3
+          time: 0.06197606
+          value: 0.9869968
+          inSlope: 0.42119658
+          outSlope: 0.42119658
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
           value: 0
@@ -12984,6 +13042,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1219040992
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219040989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030084684, y: 0.0008868462, z: 0.016032476}
+  m_Center: {x: 0.015024424, y: 0.0005776954, z: -1.6324253e-16}
 --- !u!1 &1265253929
 GameObject:
   m_ObjectHideFlags: 0
@@ -14669,7 +14740,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -15536,13 +15607,40 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 1
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
           outWeight: 0
+        - serializedVersion: 3
+          time: 0.07317513
+          value: 0.947215
+          inSlope: 0.61887425
+          outSlope: 0.61887425
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.42997894
+          value: 0.74499416
+          inSlope: -1.9151306
+          outSlope: -1.9151306
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.6233015
+          value: 0.19907796
+          inSlope: -1.4780456
+          outSlope: -1.4780456
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
           value: 0
@@ -21106,7 +21204,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -21117,13 +21215,22 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 1
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
           outWeight: 0
+        - serializedVersion: 3
+          time: 0.06197606
+          value: 0.9869968
+          inSlope: 0.42119658
+          outSlope: 0.42119658
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
           value: 0
@@ -25832,6 +25939,7 @@ GameObject:
   - component: {fileID: 2006084186992429560}
   - component: {fileID: 2006084186992429561}
   - component: {fileID: 2006084186992429562}
+  - component: {fileID: 2006084186992429563}
   m_Layer: 0
   m_Name: Maze_Door
   m_TagString: Untagged
@@ -25884,6 +25992,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyPosition: {fileID: 2134053163}
+--- !u!65 &2006084186992429563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006084186992429559}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.038101405, y: 0.0031120556, z: 0.029756637}
+  m_Center: {x: -0.000058456426, y: -0.0035556718, z: 0.0000202111}
 --- !u!23 &2487503994600294423
 MeshRenderer:
   m_ObjectHideFlags: 0
