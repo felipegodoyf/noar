@@ -1,6 +1,6 @@
 <img src="https://github.com/felipegodoyf/noar/blob/master/Assets/Sprites/Icon%201024x1024.png?raw=true" width="120px">
 
-***
+---
 
 **:rocket: Noar** is:<br>
 - :iphone: A mobile **escape room** game<br>
